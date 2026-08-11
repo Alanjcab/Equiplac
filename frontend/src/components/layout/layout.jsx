@@ -1,5 +1,7 @@
 import { Outlet } from "react-router-dom";
+
 import Navbar from "./navbar.jsx";
+import Footer from "./footer.jsx";
 
 function Layout() {
   return (
@@ -12,9 +14,7 @@ function Layout() {
         <Outlet />
       </main>
 
-      <footer>
-        {/* Footer va acá */}
-      </footer>
+      <Footer />
 
       {/* Botón de WhatsApp va acá */}
     </>
