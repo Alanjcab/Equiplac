@@ -1,0 +1,70 @@
+/*TITULOS*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, var(--font-size-3xl));
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, var(--font-size-2xl));
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, var(--font-size-xl));
+}
+
+/*PARRAFOS*/
+
+p {
+  font-size: var(--font-size-base);
+  line-height: 1.7;
+}
+
+/*TEXTO DESTACADO*/
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+/*ENCABEZADO DE SECCION*/
+
+.section-title {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: var(--spacing-lg);
+  text-transform: uppercase;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--color-accent);
+}
+
+/*SUBTITULO DE SECCION*/
+
+.section-subtitle {
+  max-width: 700px;
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-md);
+}
