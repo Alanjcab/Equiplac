@@ -70,18 +70,6 @@
   letter-spacing: -0.025em;
 }
 
-/*DESCRIPCION*/
-
-.hero__description {
-  max-width: 650px;
-  margin-bottom: var(--spacing-xl);
-
-  color: var(--color-text-secondary);
-
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
-  line-height: 1.7;
-}
-
 /*ACCIONES*/
 
 .hero__actions {

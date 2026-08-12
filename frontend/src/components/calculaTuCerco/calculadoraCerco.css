@@ -1,0 +1,356 @@
+/*CALCULADORA*/
+
+.calculadora-cerco {
+  padding: 45px 0 70px;
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--color-primary-dark),
+      #071827
+    );
+}
+
+/*PANEL*/
+
+.calculadora-cerco__panel {
+  position: relative;
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  padding: 38px 42px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(20, 52, 69, 0.94),
+      rgba(7, 27, 45, 0.98)
+    );
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
+/*ENCABEZADO*/
+
+.calculadora-cerco__header {
+  max-width: 720px;
+
+  margin-bottom: 30px;
+}
+
+.calculadora-cerco__header > span {
+  display: inline-block;
+
+  margin-bottom: 10px;
+
+  color: var(--color-accent);
+
+  font-size: 0.78rem;
+  font-weight: var(--font-weight-semibold);
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.calculadora-cerco__header h2 {
+  margin-bottom: 10px;
+
+  color: var(--color-white);
+
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: var(--font-weight-semibold);
+
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.calculadora-cerco__header p {
+  max-width: 650px;
+
+  color: rgba(255, 255, 255, 0.62);
+
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+/*FORMULARIO*/
+
+.calculadora-cerco__fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px 28px;
+}
+
+/*CAMPO*/
+
+.calculadora-cerco__field {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.calculadora-cerco__field--full {
+  grid-column: 1 / -1;
+}
+
+.calculadora-cerco__field label {
+  color: rgba(255, 255, 255, 0.8);
+
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-semibold);
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/*INPUT*/
+
+.calculadora-cerco__input {
+  min-height: 54px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 0 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+
+  background-color: rgba(255, 255, 255, 0.055);
+
+  transition:
+    border-color var(--transition-fast),
+    background-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.calculadora-cerco__input:focus-within {
+  border-color: rgba(85, 174, 40, 0.75);
+
+  background-color: rgba(255, 255, 255, 0.075);
+
+  box-shadow: 0 0 0 3px rgba(85, 174, 40, 0.08);
+}
+
+.calculadora-cerco__input svg {
+  flex-shrink: 0;
+
+  color: var(--color-accent);
+}
+
+.calculadora-cerco__input input,
+.calculadora-cerco__input select {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+  color: var(--color-white);
+
+  font: inherit;
+  font-size: 0.98rem;
+}
+
+.calculadora-cerco__input select {
+  cursor: pointer;
+}
+
+.calculadora-cerco__input select option {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.calculadora-cerco__input > span {
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 0.88rem;
+}
+
+/*OPCIONES*/
+
+.calculadora-cerco__options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+}
+
+.calculadora-cerco__option {
+  min-height: 82px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 16px 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+
+  background-color: rgba(255, 255, 255, 0.04);
+  color: var(--color-white);
+
+  cursor: pointer;
+
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.calculadora-cerco__option strong {
+  margin-bottom: 4px;
+
+  font-size: 1.35rem;
+  font-weight: var(--font-weight-semibold);
+}
+
+.calculadora-cerco__option span {
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 0.82rem;
+}
+
+.calculadora-cerco__option:hover {
+  border-color: rgba(85, 174, 40, 0.5);
+
+  transform: translateY(-2px);
+}
+
+.calculadora-cerco__option--active {
+  border-color: var(--color-accent);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(85, 174, 40, 0.18),
+      rgba(85, 174, 40, 0.07)
+    );
+
+  box-shadow: inset 0 0 0 1px rgba(85, 174, 40, 0.16);
+}
+
+.calculadora-cerco__option--active strong {
+  color: var(--color-accent);
+}
+
+/*AYUDA*/
+
+.calculadora-cerco__help {
+  color: rgba(255, 255, 255, 0.42);
+
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+/*BOTON*/
+
+.calculadora-cerco__submit {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 28px;
+}
+
+.calculadora-cerco__submit button {
+  min-height: 54px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  padding: 0.85rem 1.55rem;
+
+  border: none;
+  border-radius: 13px;
+
+  background-color: var(--color-accent);
+  color: var(--color-white);
+
+  font-size: 0.92rem;
+  font-weight: var(--font-weight-semibold);
+
+  cursor: pointer;
+
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+
+  transition:
+    background-color var(--transition-fast),
+    transform var(--transition-fast),
+    gap var(--transition-normal),
+    box-shadow var(--transition-fast);
+}
+
+.calculadora-cerco__submit button:hover {
+  background-color: var(--color-accent-hover);
+
+  transform: translateY(-2px);
+
+  gap: 17px;
+
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.24);
+}
+
+/*TABLET*/
+
+@media (max-width: 900px) {
+  .calculadora-cerco__panel {
+    padding: 34px 28px;
+  }
+
+  .calculadora-cerco__fields {
+    grid-template-columns: 1fr;
+  }
+
+  .calculadora-cerco__field--full {
+    grid-column: auto;
+  }
+}
+
+/*MOBILE*/
+
+@media (max-width: 600px) {
+  .calculadora-cerco {
+    padding: 45px 0 60px;
+  }
+
+  .calculadora-cerco__panel {
+    padding: 26px 20px;
+
+    border-radius: 14px;
+  }
+
+  .calculadora-cerco__header {
+    margin-bottom: 26px;
+  }
+
+  .calculadora-cerco__header h2 {
+    font-size: 2rem;
+  }
+
+  .calculadora-cerco__options {
+    grid-template-columns: 1fr;
+  }
+
+  .calculadora-cerco__submit {
+    justify-content: stretch;
+  }
+
+  .calculadora-cerco__submit button {
+    width: 100%;
+  }
+}

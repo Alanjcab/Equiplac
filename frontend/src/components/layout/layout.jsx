@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 
 import Navbar from "./navbar.jsx";
 import Footer from "./footer.jsx";
+import WhatsappButton from "./whatsappButton.jsx";
 
 function Layout() {
   return (
@@ -16,7 +17,7 @@ function Layout() {
 
       <Footer />
 
-      {/* Botón de WhatsApp va acá */}
+      <WhatsappButton />
     </>
   );
 }

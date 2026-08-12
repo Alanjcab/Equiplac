@@ -69,12 +69,6 @@ function Navbar() {
             </li>
 
             <li>
-              <NavLink to="/pergolas-y-parrillas" onClick={closeMenu}>
-                Pérgolas y parrillas
-              </NavLink>
-            </li>
-
-            <li>
               <NavLink to="/galeria" onClick={closeMenu}>
                 Galería
               </NavLink>
@@ -94,11 +88,11 @@ function Navbar() {
           </ul>
 
           <NavLink
-            to="/cotizador"
+            to="/calcula-tu-cerco"
             className="navbar__cta"
             onClick={closeMenu}
           >
-            Cotizá tu cerco
+            Calcula tu Cerco
           </NavLink>
         </div>
       </div>

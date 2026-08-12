@@ -47,12 +47,6 @@ function Footer() {
                 Carpintería metálica
               </Link>
             </li>
-
-            <li>
-              <Link to="/pergolas-y-parrillas">
-                Pérgolas y parrillas
-              </Link>
-            </li>
           </ul>
         </div>
 

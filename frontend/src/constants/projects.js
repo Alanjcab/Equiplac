@@ -29,16 +29,6 @@ const projects = [
     location: "Mar del Plata",
     image: null,
   },
-  {
-    id: 4,
-    number: "04",
-    category: "Pérgolas y parrillas",
-    title: "Espacios para disfrutar",
-    description:
-      "Diseño y construcción de espacios exteriores funcionales, resistentes y personalizados.",
-    location: "Mar del Plata",
-    image: null,
-  },
 ];
 
 export default projects;

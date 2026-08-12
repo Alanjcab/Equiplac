@@ -23,14 +23,6 @@ const services = [
     image: null,
     path: "/carpinteria-metalica",
   },
-  {
-    id: 4,
-    title: "Pérgolas y parrillas",
-    description:
-      "Diseño y construcción de espacios exteriores funcionales y personalizados.",
-    image: null,
-    path: "/pergolas-y-parrillas",
-  },
 ];
 
 export default services;
