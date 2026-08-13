@@ -1,0 +1,217 @@
+/*CALCULA TU CERCO*/
+
+.fence-cta {
+  position: relative;
+
+  padding: 85px 0;
+
+  background-color: var(--color-primary-dark);
+
+  background-image:
+    linear-gradient(
+      rgba(4, 18, 31, 0.55),
+      rgba(4, 18, 31, 0.72)
+    ),
+    url("../../assets/images/calcula-tu-cerco-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+/*TARJETA*/
+
+.fence-cta__content {
+  position: relative;
+
+  width: 100%;
+  max-width: 1180px;
+
+  margin: 0 auto;
+
+  padding: 70px 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+
+  background-color: rgba(15, 48, 68, 0.58);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+
+  text-align: center;
+}
+
+/*LINEA SUPERIOR*/
+
+.fence-cta__content::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  width: 90px;
+  height: 4px;
+
+  background-color: var(--color-accent);
+
+  transform: translateX(-50%);
+}
+
+/*ETIQUETA*/
+
+.fence-cta__eyebrow {
+  margin-bottom: 20px;
+
+  color: var(--color-accent);
+
+  font-size: 0.82rem;
+  font-weight: var(--font-weight-semibold);
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/*TITULO*/
+
+.fence-cta__content h2 {
+  margin-bottom: 20px;
+
+  color: var(--color-white);
+
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  font-weight: var(--font-weight-semibold);
+
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+/*DESCRIPCION*/
+
+.fence-cta__content p {
+  max-width: 650px;
+
+  margin-bottom: 34px;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/*BOTON*/
+
+.fence-cta__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  padding: 17px 26px;
+
+  border-radius: 8px;
+
+  background-color: var(--color-accent);
+  color: var(--color-white);
+
+  font-size: 0.92rem;
+  font-weight: var(--font-weight-semibold);
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+/*ICONO*/
+
+.fence-cta__button svg {
+  flex-shrink: 0;
+
+  font-size: 1.15rem;
+
+  transition: transform var(--transition-normal);
+}
+
+/*HOVER*/
+
+.fence-cta__button:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+.fence-cta__button:hover svg {
+  transform: translateX(5px);
+}
+
+/*ACTIVE*/
+
+.fence-cta__button:active {
+  transform: translateY(0);
+}
+
+/*TABLET*/
+
+@media (max-width: 900px) {
+  .fence-cta {
+    padding: 70px 0;
+  }
+
+  .fence-cta__content {
+    padding: 60px 32px;
+  }
+}
+
+/*MOBILE*/
+
+@media (max-width: 600px) {
+  .fence-cta {
+    padding: 55px 0;
+  }
+
+  .fence-cta__content {
+    padding: 50px 22px;
+
+    border-radius: 12px;
+  }
+
+  .fence-cta__eyebrow {
+    margin-bottom: 16px;
+
+    font-size: 0.74rem;
+  }
+
+  .fence-cta__content h2 {
+    margin-bottom: 16px;
+
+    font-size: clamp(2.2rem, 11vw, 3rem);
+  }
+
+  .fence-cta__content p {
+    margin-bottom: 28px;
+
+    font-size: 0.95rem;
+  }
+
+  .fence-cta__button {
+    width: 100%;
+
+    padding: 16px 20px;
+  }
+}

@@ -1,6 +1,4 @@
-/* =========================
-   FOOTER
-========================= */
+/*FOOTER*/
 
 .footer {
   padding: 80px 0 28px;
@@ -15,10 +13,7 @@
   color: var(--color-white);
 }
 
-
-/* =========================
-   CONTENEDOR PRINCIPAL
-========================= */
+/*CONTENEDOR PRINCIPAL*/
 
 .footer__container {
   display: grid;
@@ -34,10 +29,7 @@
   padding-bottom: 55px;
 }
 
-
-/* =========================
-   MARCA
-========================= */
+/*MARCA*/
 
 .footer__logo {
   display: inline-block;
@@ -54,7 +46,6 @@
   text-decoration: none;
 }
 
-
 .footer__description {
   max-width: 390px;
 
@@ -66,10 +57,7 @@
   line-height: 1.7;
 }
 
-
-/* =========================
-   TÍTULOS
-========================= */
+/*TITULOS*/
 
 .footer h3 {
   position: relative;
@@ -89,7 +77,6 @@
   letter-spacing: 0.08em;
 }
 
-
 .footer h3::after {
   content: "";
 
@@ -104,10 +91,7 @@
   background-color: var(--color-accent);
 }
 
-
-/* =========================
-   SERVICIOS
-========================= */
+/*SERVICIOS*/
 
 .footer__services ul {
   display: flex;
@@ -120,7 +104,6 @@
 
   list-style: none;
 }
-
 
 .footer__services a {
   display: inline-block;
@@ -136,17 +119,13 @@
     transform var(--transition-fast);
 }
 
-
 .footer__services a:hover {
   color: var(--color-accent);
 
   transform: translateX(3px);
 }
 
-
-/* =========================
-   CONTACTO
-========================= */
+/*CONTACTO*/
 
 .footer__contact ul {
   display: flex;
@@ -159,7 +138,6 @@
 
   list-style: none;
 }
-
 
 .footer__contact li {
   display: flex;
@@ -174,7 +152,6 @@
   line-height: 1.5;
 }
 
-
 .footer__contact svg {
   flex-shrink: 0;
 
@@ -182,7 +159,6 @@
 
   color: var(--color-accent);
 }
-
 
 .footer__contact a {
   color: inherit;
@@ -192,15 +168,34 @@
   transition: color var(--transition-fast);
 }
 
-
 .footer__contact a:hover {
   color: var(--color-white);
 }
 
+/*UBICACIONES*/
 
-/* =========================
-   REDES SOCIALES
-========================= */
+.footer__location {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.footer__location strong {
+  color: var(--color-white);
+
+  font-size: 0.9rem;
+  font-weight: var(--font-weight-semibold);
+}
+
+.footer__location span {
+  color: rgba(255, 255, 255, 0.58);
+
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+/*REDES SOCIALES*/
 
 .footer__social-links {
   display: flex;
@@ -209,7 +204,6 @@
 
   gap: 10px;
 }
-
 
 .footer__social-links a {
   width: 46px;
@@ -237,7 +231,6 @@
     transform var(--transition-fast);
 }
 
-
 .footer__social-links a:hover {
   background-color: var(--color-accent);
 
@@ -248,10 +241,7 @@
   transform: translateY(-3px);
 }
 
-
-/* =========================
-   PARTE INFERIOR
-========================= */
+/*PARTE INFERIOR*/
 
 .footer__bottom {
   display: flex;
@@ -267,7 +257,6 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-
 .footer__bottom p {
   margin: 0;
 
@@ -276,15 +265,11 @@
   font-size: 0.82rem;
 }
 
-
-/* =========================
-   DESARROLLADOR
-========================= */
+/*DESARROLLADOR*/
 
 .footer__developer {
   text-align: right;
 }
-
 
 .footer__developer a {
   color: rgba(255, 255, 255, 0.78);
@@ -296,35 +281,24 @@
   transition: color var(--transition-fast);
 }
 
-
 .footer__developer a:hover {
   color: var(--color-accent);
 }
 
-
-/* =========================
-   TABLET
-========================= */
+/*TABLET*/
 
 @media (max-width: 1000px) {
-
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
-
-/* =========================
-   MOBILE
-========================= */
+/*MOBILE*/
 
 @media (max-width: 650px) {
-
   .footer {
     padding-top: 65px;
   }
-
 
   .footer__container {
     grid-template-columns: 1fr;
@@ -334,11 +308,9 @@
     padding-bottom: 42px;
   }
 
-
   .footer__description {
     max-width: 100%;
   }
-
 
   .footer__bottom {
     flex-direction: column;
@@ -350,9 +322,7 @@
     text-align: center;
   }
 
-
   .footer__developer {
     text-align: center;
   }
-
 }

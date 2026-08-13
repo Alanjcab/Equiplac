@@ -4,12 +4,14 @@ import WhyEquiplac from "../components/home/whyEquiplac.jsx";
 import ProjectsShowcase from "../components/home/projectsShowcase.jsx";
 import ContactCta from "../components/home/contactCta.jsx";
 import ClientsStrip from "../components/home/clientsStrip.jsx";
+import CalculaTuCercoCta from "../components/home/calculaTuCercoCta.jsx";
 function Home() {
   return (
     <>
       <Hero />
       <ServicesCarousel />
       <WhyEquiplac />
+      <CalculaTuCercoCta />
       <ProjectsShowcase />
       <ContactCta />
       <ClientsStrip />

@@ -13,6 +13,7 @@ function Footer() {
       <div className="container footer__container">
 
         {/* MARCA */}
+
         <div className="footer__brand">
           <Link to="/" className="footer__logo">
             EQUIPLAC
@@ -26,6 +27,7 @@ function Footer() {
         </div>
 
         {/* SERVICIOS */}
+
         <div className="footer__services">
           <h3>Servicios</h3>
 
@@ -51,6 +53,7 @@ function Footer() {
         </div>
 
         {/* CONTACTO */}
+
         <div className="footer__contact">
           <h3>Contacto</h3>
 
@@ -74,14 +77,35 @@ function Footer() {
             <li>
               <MapPin size={19} strokeWidth={2.2} />
 
-              <span>
-                Buenos Aires, Argentina
-              </span>
+              <div className="footer__location">
+                <strong>Buenos Aires</strong>
+
+                <span>
+                  Calderón de la Barca 176
+                  <br />
+                  Don Torcuato, Tigre
+                </span>
+              </div>
+            </li>
+
+            <li>
+              <MapPin size={19} strokeWidth={2.2} />
+
+              <div className="footer__location">
+                <strong>Mar del Plata</strong>
+
+                <span>
+                  Calle 489 N.º 933
+                  <br />
+                  Mar del Plata
+                </span>
+              </div>
             </li>
           </ul>
         </div>
 
         {/* REDES SOCIALES */}
+
         <div className="footer__social">
           <h3>Seguinos</h3>
 
@@ -93,6 +117,7 @@ function Footer() {
       </div>
 
       {/* PARTE INFERIOR */}
+
       <div className="container footer__bottom">
 
         <p className="footer__copyright">
@@ -102,7 +127,7 @@ function Footer() {
         <p className="footer__developer">
           Desarrollado por{" "}
           <a
-            href="TU_LINK_DE_LINKEDIN"
+            href="https://www.linkedin.com/in/alan-julian-cabrera-567273228/"
             target="_blank"
             rel="noopener noreferrer"
           >
